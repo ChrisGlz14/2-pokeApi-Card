@@ -8,17 +8,22 @@
   <title>Frontend Mentor | Profile card component</title>
 </head>
 <body>
- <main class="flex-container">
-    <div class="search-container">
-        <input type="text" placeholder="Ingrese Pokemon">
-        <button id="search-btn">Buscar</button>
-    </div>
+
+
+    <main class="flex">
+     
+         <div class="search-container">
+             <input id="search-input" type="text" placeholder="Ingrese Pokemon">
+             <button id="search-btn">Buscar</button>
+         </div>
+
+    <template id="card">
     <article class="card">
         <img src="images/bg-pattern-card.svg" alt="imagen header card" class="card-header">
-        <div class="card-body">
-            <img src="./images/christian.jpg" alt="image of victor" class="card-body-img"> 
+        <div class="card-body" id="background-card">
+            <img src="./images/christian.jpg" alt="image of victor" class="card-body-img" id="img-card"> 
         </div>
-        <h1 class="card-body-title">
+        <h1 class="card-body-title" id="card-title">
             Christian Gonzalez
             <span>23</span>
         </h1>
@@ -26,20 +31,25 @@
         <div class="card-footer">
             <div class="card-footer-social">
                 <h3>90K</h3>
-                <p>Follows</p>
+                <p>Ataque</p>
             </div>
             <div class="card-footer-social">
                 <h3>930K</h3>
-                <p>Me gusta</p>
+                <p>Especial</p>
             </div>
             <div class="card-footer-social">
                 <h3>292</h3>
-                <p>Fotos</p>
+                <p>Defensa</p>
             </div>
             
         </div>
     </article>
+</template>
  </main>
   </div>
+
+
+
+  <script src="main.js"></script>
 </body>
 </html>

@@ -26,7 +26,7 @@ body {
     background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
-.flex-container {
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +95,7 @@ body {
         &-img {
             border:5px solid rgb(255, 255, 255);
             border-radius: 50%;
-            margin-top: -108px;
+            margin-top: -105px;
             width: 200px;
             height: 200px;
         }
@@ -104,6 +104,7 @@ body {
             text-align: center;
             font-size: 1.8rem;
             margin-top: 1rem;
+            text-transform: capitalize;
             
             span {
                 color: var(--Dark-grayish-blue);
