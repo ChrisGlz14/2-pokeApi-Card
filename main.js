@@ -7,7 +7,7 @@ const searchBtn = document.getElementById('search-btn');
 
 //obtengo el valor del input (searchInput) y eliminar los espacios en blanco del principio y el final utilizando el método trim(). Retornando el valor en limpio.
 function getPokemonInput () {
-  return searchInput.value.trim()  
+  return searchInput.value.trim().toLowerCase()  
 }
 
 
