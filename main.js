@@ -27,13 +27,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-//Se obtiene el valor del campo de entrada de búsqueda utilizando getPokemonInput(). Si el valor no está vacío, llama a la función fetchData() para buscar los datos del Pokémon ingresado por el usuario.
-searchBtn.addEventListener("click", () => {
+//Se obtiene el valor del campo de entrada de búsqueda utilizando getPokemonInput(). Si el valor no está vacío, llama a la función fetchData() para buscar los datos del Pokémon ingresado por el usuario. Ademas agregue la funcion de poder buscar apretando Enter
+function enterSearch() {
   const userInput = getPokemonInput();
   if (userInput !== "") {
     fetchData(userInput);
   }
+}
+
+searchBtn.addEventListener("click", enterSearch);
+
+document.addEventListener("keyup", (event) => {
+  if (event.key === "Enter") {
+    enterSearch();
+  }
 });
+
 
 
 
